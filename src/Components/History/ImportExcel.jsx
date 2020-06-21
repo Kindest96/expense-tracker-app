@@ -36,7 +36,7 @@ export const ImportExcel = () => {
                         amount: parseFloat(transaction[2])
                     }
                     toJSON.unshift(newTransaction);
-                    return transaction;
+                    return newTransaction;
                 });
                 setTransaction(toJSON);
                 return result;

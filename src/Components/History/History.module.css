@@ -1,0 +1,31 @@
+.container{
+    padding: 25px;
+    width: 90% !important;
+}
+
+.dark > input{
+    background-color: black;
+    color: white
+}
+
+.UDB{
+    padding-right: 10px;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list{
+    display: block !important;
+}
+
+.minus{
+    background-color: #ff533f !important;
+}
+
+.plus{
+    background-color: #32ff88 !important;
+}

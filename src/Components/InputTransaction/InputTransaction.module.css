@@ -1,0 +1,22 @@
+.container{
+    padding: 20px 0;
+    width: 85% !important;
+}
+
+button{
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+}
+
+.minus{
+    background-color: #ff533f !important;
+}
+
+.plus{
+    background-color: #32ff88 !important;
+}
+
+.dark{
+    color: darkgray !important;
+    border-color: white !important;
+}

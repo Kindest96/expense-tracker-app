@@ -1,0 +1,27 @@
+.container{
+    padding: 10px 10% !important;
+    width: 90% !important;
+}
+
+.paper{
+    padding: 0px;
+    height: 45px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.IEB{
+    padding: 10px 0;
+}
+
+.minus{
+    background-color: #ff533f !important;
+    -webkit-transition: background-color 1000ms ease-in;
+    -ms-transition: background-color 1000ms ease-in;
+    transition: background-color 1000ms ease-in;}
+
+.plus{
+    background-color: #32ff88 !important;
+    -webkit-transition: background-color 1000ms ease-in;
+    -ms-transition: background-color 1000ms ease-in;
+    transition: background-color 1000ms ease-in;}

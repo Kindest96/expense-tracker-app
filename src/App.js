@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useContext} from 'react';
+import { Header, History, Summary, InputTransaction } from './Components';
+import cx from 'classnames';
+import { GlobalContext } from "./Globals/Globals";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import styles from './App.module.css';
+
+const App = () => {
+    const { dark } = useContext(GlobalContext);
+
+    return (
+        <div className={cx(styles.container, (dark ? styles.dark : styles.light))}>
+                <Header />
+                <History />
+                <Summary />
+                <InputTransaction />
+            </div>
+        );
 }
 
 export default App;

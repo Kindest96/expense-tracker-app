@@ -1,4 +1,4 @@
-import React, { createContext, useReducer, Children } from 'react';
+import React, { createContext, useReducer } from 'react';
 import AppReducer from './AppReducer';
 
 const initialState = {
@@ -57,7 +57,7 @@ export const GlobalProvider = ({ children }) => {
             setTransaction,
             editTransaction
         }}>
-            {Children}
+            {children}
         </GlobalContext.Provider>
     );
 }

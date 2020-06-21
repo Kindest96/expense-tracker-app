@@ -10,7 +10,7 @@ import { ImportExcel } from "./ImportExcel";
 
 
 export const History = () => {
-    const { dark, transactions } = useContext(GlobalContext);
+    const { transactions } = useContext(GlobalContext);
 
     return (
         <Grid container justify="center"

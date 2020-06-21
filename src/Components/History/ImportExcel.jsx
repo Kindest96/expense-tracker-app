@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import Button from '@material-ui/core/Button';
 import styles from './History.module.css';
 import { GlobalContext } from '../../Globals/Globals'
@@ -19,7 +19,7 @@ export const ImportExcel = () => {
     }
 
     const getAsText = (fileToRead) => {
-        let reader = new FileReader;
+        let reader = new FileReader();
         
         reader.readAsText(fileToRead);
         
@@ -39,11 +39,13 @@ export const ImportExcel = () => {
                 });
                 setTransaction(toJSON)
             })
+            return;
         };
         reader.onerror = (event) => {
             if (event.target.error.name) {
                 alert(event.target.error.name);
             }
+            return;
         };
     }
 

@@ -4,7 +4,7 @@ import { Grid, TextField, FormControl, InputAdornment, InputLabel, OutlinedInput
 import { GlobalContext } from '../../Globals/Globals';
 
 export const InputTransaction = () => {
-    const { dark, addTransaction, edit } = useContext(GlobalContext);
+    const { addTransaction, edit } = useContext(GlobalContext);
 
     const [text, setText] = useState('');
     const [amount, setAmount] = useState(0);

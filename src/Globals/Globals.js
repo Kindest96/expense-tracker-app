@@ -57,7 +57,7 @@ export const GlobalProvider = ({ children }) => {
             setTransaction,
             editTransaction
         }}>
-            {children}
+            {Children}
         </GlobalContext.Provider>
     );
 }

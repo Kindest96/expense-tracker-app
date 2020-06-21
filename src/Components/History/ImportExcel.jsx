@@ -39,13 +39,13 @@ export const ImportExcel = () => {
                 });
                 setTransaction(toJSON)
             })
-            return;
+            return 1;
         };
         reader.onerror = (event) => {
             if (event.target.error.name) {
                 alert(event.target.error.name);
             }
-            return;
+            return 1;
         };
     }
 

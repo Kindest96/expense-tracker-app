@@ -37,15 +37,14 @@ export const ImportExcel = () => {
                     }
                     toJSON.unshift(newTransaction);
                 });
-                setTransaction(toJSON)
+                setTransaction(toJSON);
+                return transaction;
             })
-            return 1;
         };
         reader.onerror = (event) => {
             if (event.target.error.name) {
                 alert(event.target.error.name);
             }
-            return 1;
         };
     }
 

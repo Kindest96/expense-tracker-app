@@ -31,4 +31,4 @@ jobs:
       run: yarn build
       
     - name: Deploy surge
-      run: surge ./build kindest_etapp.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./build asif_etapp.surge.sh --token ${{secrets.SURGE_TOKEN}}
